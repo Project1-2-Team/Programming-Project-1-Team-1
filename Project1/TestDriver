@@ -1,0 +1,31 @@
+package Project1;
+
+public class TestDriver{
+    private static void runAllAlgorithms(int[] arr) {
+        ComparisonCounter counter = new ComparisonCounter();
+
+        // MergeSort
+        int[] arr1 = arr.clone();
+        counter.resetCount();
+        MergeSort.mergeSort(arr1, counter);
+        System.out.println("Merge Sort comparisons: " + counter.getCount());
+
+        // QuickSort
+        int[] arr3 = arr.clone();
+        counter.resetCount();
+        QuickSort.quickSort(arr3, counter);
+        System.out.println("Quick Sort comparisons: " + counter.getCount());
+
+        // ShakerSort
+        int[] arr4 = arr.clone();
+        counter.resetCount();
+        ShakerSort.shakerSort(arr4, counter);
+        System.out.println("Shaker Sort comparisons: " + counter.getCount());
+
+        // HeapSort
+        int[] arr2 = arr.clone();
+        counter.resetCount();
+        HeapSort.heapSort(arr2, counter);
+        System.out.println("Heap Sort comparisons: " + counter.getCount());
+    }
+}
