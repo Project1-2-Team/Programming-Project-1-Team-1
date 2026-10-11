@@ -1,0 +1,40 @@
+6. Programming Requirements
+You may hard-code your initial data for this project; user input and a GUI are not required unless a later Change Request explicitly modifies that requirement. Use representations appropriate to each mathematical structure, but deliberately consider what behavior, validation, formatting, testing, or interfaces can be shared.
+
+Required output/testability constraints
+Universal set size: Use a universal set with n ≥ 10 elements for Part 1.
+Representations: For Part 1 results, display both the bit string / Boolean-array representation and an element-name listing.
+Representative runs: Include at least 2–3 representative test cases, not just one.
+Edge testing: Include at least one edge case relevant to the operation being tested.
+Multiset non-triviality: For Part 2, ensure both A and B include at least two elements with multiplicity > 1.
+Labeling: Label outputs clearly so ordinary set operations are not confused with multiset operations or later Change Request functionality.
+Regression requirement: After the Week 2 change is implemented, all previously required Set and Multiset functionality must continue to operate correctly.
+Part 1 – Ordinary Sets Using Bit Strings / Boolean Arrays
+Given subsets A and B of a universal set with n elements, use bit strings or an array of Booleans to find:
+
+NOT(A) – complement of A with respect to the universal set
+A ∪ B – union
+A ∩ B – intersection
+A − B – set difference
+A ⊕ B – symmetric difference, defined as (A − B) ∪ (B − A)
+Fix and document the ordering of the universal set. For each result, display both the bit-string/Boolean-array representation and a readable element-name listing.
+
+Part 2 – Multisets (Bags)
+Given multisets A and B from the same universal set, track a non-negative integer multiplicity for each element and find:
+
+Multiset union (A ∪ B): for each element, take the maximum count in A and B.
+Multiset intersection (A ∩ B): for each element, take the minimum count in A and B.
+Multiset difference (A − B): for each element, subtract B's count from A's count, but not below 0.
+Multiset sum (A + B): for each element, add the two counts.
+Label these results clearly as multiset operations so they are not confused with the ordinary set results from Part 1.
+
+Part 3 – Week 2 Change Request
+During Week 2, the instructor will publish a Change Request announcement in Canvas. The announcement will define additional functionality that must be incorporated into this project.
+
+The exact requirement is intentionally undisclosed at project launch.
+The Change Request becomes part of the required final functionality once published.
+Existing Set and Multiset requirements remain in effect unless the Change Request explicitly states otherwise.
+The change must be integrated into the existing project and repository; it may not be submitted as an unrelated replacement program.
+Reasonable refactoring is allowed and may be necessary. Refactoring should improve or preserve structure rather than simply duplicate the application.
+Extend your verification plan to test the new requirement and to confirm that Parts 1 and 2 still work correctly.
+Document the impact of the change in your report and support your explanation with repository/Git evidence.
