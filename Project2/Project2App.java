@@ -1,7 +1,7 @@
 package Project2;
 
 /*
- * Team name: TBD
+ * Team name: Team 1
  * Team members: Mubarak, Anupa, Jake
  * Course and section: CS 2430, section TBD
  * Project: Programming Project 2 – Fall 2026
