@@ -1,4 +1,4 @@
-﻿package project2;
+﻿package Project2;
 
 /*
  * Team name: TBD
